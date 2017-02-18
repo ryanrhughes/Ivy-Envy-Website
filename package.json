@@ -1,0 +1,24 @@
+{
+  "name": "ivy-envy-website",
+  "version": "0.0.1",
+  "description": "Customer facing website for ivyenvy.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanrhughes/Ivy-Envy-Website.git"
+  },
+  "author": "Ryan Hughes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanrhughes/Ivy-Envy-Website/issues"
+  },
+  "homepage": "https://github.com/ryanrhughes/Ivy-Envy-Website#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "child_process": "^1.0.2",
+    "gulp": "^3.9.1"
+  }
+}

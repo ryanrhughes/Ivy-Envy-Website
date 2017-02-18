@@ -1,6 +1,6 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
+// ---
+// # Only the main Sass file needs front matter (the dashes are enough)
+// ---
 @charset "utf-8";
 
 // Our variables
@@ -37,3 +37,8 @@ $on-laptop:        800px;
 
 // Import partials from the `minima` theme.
 @import "minima";
+
+// Concise Core + UI + Components
+@import "concise.css/concise";
+@import "concise-ui/concise-ui";
+@import "concise-utils/concise-utils";
