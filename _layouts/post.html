@@ -1,7 +1,21 @@
 ---
 layout: default
 ---
-{% if page.podcast_id %}
-  {% include libsyn-player.html %}
-{% endif %}
-{{ content }}
+<header class="post-header" container>
+  <div grid>
+    <div column="2"><img src="{{ page.thumbnail }}" alt=""></div>
+    <div class="content" column>
+      <span class="date">{{ page.date | date: "%b %-d, %Y" }}</span>
+      <h1>{{ page.title | escape }}</h1>
+      {% if page.podcast_id %}
+        {% include libsyn-player.html %}
+      {% endif %}
+    </div>
+  </div>
+</header>
+
+<div class="post-content">
+  <div container>
+    {{ content }} 
+  </div>
+</div>

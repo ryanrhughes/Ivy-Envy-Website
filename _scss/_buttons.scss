@@ -1,0 +1,10 @@
+//
+// Buttons
+// =============================================================================
+
+.button {
+  @extend button;
+  
+  appearance: initial;
+  padding: 0.75em 1.5em;
+}

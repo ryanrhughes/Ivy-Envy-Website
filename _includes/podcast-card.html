@@ -1,0 +1,15 @@
+<article class="podcast-card">
+  <a grid="no-gutters" href="{{ post.url | relative_url }}">
+    <div class="thumbnail" column="3">
+      <img src="http://placehold.it/500x500" alt="">
+    </div>
+    <div class="content" column>
+      <span class="date">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <h2>{{ post.title | escape | truncate: 50 }}</h2>
+      <p>
+        {{ post.excerpt | strip_html | truncate: 280 }}
+      </p>
+      <span class="button">Listen Now!</span>
+    </div>
+  </a>
+</article>

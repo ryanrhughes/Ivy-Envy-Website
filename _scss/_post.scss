@@ -1,0 +1,30 @@
+// Post Layout
+
+.post-header {
+  margin-bottom: 1.5rem;
+
+  .content {
+    padding: .75rem 0;
+  }
+
+  h1 {
+    font-size: typeScale(5);
+  }
+
+  .date {
+    color: getColor(text, secondary);
+    font-size: typeScale(1);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  iframe {
+    margin-top: 0;
+  }
+}
+
+.post-content {
+  background: #fff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}

@@ -1,11 +1,15 @@
 <header class="site-header" role="banner">
 
-  <div class="wrapper">
+  <div container>
+    <div grid>
+      <div column="2">
+        <a class="site-title" href="{{ "/" | relative_url}}"><img src="/uploads/ivy-envy-logo-small.png" alt="{{ site.title | escape }}"></a>
+      </div>
+      <div column>
+        {% include navigation.html %}
+      </div>
 
-    <a class="site-title" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a>
-
-    {% include navigation.html %}
-
+    </div>
   </div>
 
 </header>

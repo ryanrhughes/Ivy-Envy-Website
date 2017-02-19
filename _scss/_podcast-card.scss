@@ -1,0 +1,35 @@
+.podcast-card {
+  background: #fff;
+  border-radius: 7px;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+  &:hover {
+    transform: scale(.98);
+  }
+  
+  a {
+    color: getColor(text, primary);
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+
+      .button { @extend .button:hover; }
+    }
+  }
+
+  .date {
+    color: getColor(text, secondary);
+    font-size: typeScale(1);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .content {
+    padding: 2rem;
+
+    h2 { margin-top: .25rem; }
+  }
+
+  p { margin-bottom: 1rem; }
+}

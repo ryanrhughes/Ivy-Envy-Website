@@ -1,0 +1,33 @@
+/**
+ * Site header
+ */
+.site-header {
+  background: #fff;
+  border-top: 5px solid getColor(blue, dark);
+  border-bottom: 1px solid getColor(blue, dark);
+  min-height: 150px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  // Positioning context for the mobile navigation icon
+  margin-top: 0;
+  position: relative;
+}
+
+.site-nav {
+  float: right;
+  line-height: 107px;
+
+  .menu-icon {
+    display: none;
+  }
+
+  .page-link {
+    color: getColor(blue);
+
+    // Gaps between nav items, but not on the last one
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}

@@ -1,451 +1,5 @@
 @charset "UTF-8";
 /**
- * Reset some basic elements
- */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-  margin: 0;
-  padding: 0; }
-
-/**
- * Basic styling
- */
-body {
-  font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #111;
-  background-color: #fdfdfd;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-  -o-font-feature-settings: "kern" 1;
-  font-feature-settings: "kern" 1;
-  -webkit-font-kerning: normal;
-          font-kerning: normal; }
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-.highlight {
-  margin-bottom: 15px; }
-
-/**
- * Images
- */
-img {
-  max-width: 100%;
-  vertical-align: middle; }
-
-/**
- * Figures
- */
-figure > img {
-  display: block; }
-
-figcaption {
-  font-size: 14px; }
-
-/**
- * Lists
- */
-ul, ol {
-  margin-left: 30px; }
-
-li > ul,
-li > ol {
-  margin-bottom: 0; }
-
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400; }
-
-/**
- * Links
- */
-a {
-  color: #2a7ae2;
-  text-decoration: none; }
-  a:visited {
-    color: #1756a9; }
-  a:hover {
-    color: #111;
-    text-decoration: underline; }
-
-/**
- * Blockquotes
- */
-blockquote {
-  color: #828282;
-  border-left: 4px solid #e8e8e8;
-  padding-left: 15px;
-  font-size: 18px;
-  letter-spacing: -1px;
-  font-style: italic; }
-  blockquote > :last-child {
-    margin-bottom: 0; }
-
-/**
- * Code formatting
- */
-pre,
-code {
-  font-size: 15px;
-  border: 1px solid #e8e8e8;
-  border-radius: 3px;
-  background-color: #eef; }
-
-code {
-  padding: 1px 5px; }
-
-pre {
-  padding: 8px 12px;
-  overflow-x: auto; }
-  pre > code {
-    border: 0;
-    padding-right: 0;
-    padding-left: 0; }
-
-/**
- * Wrapper
- */
-.wrapper {
-  max-width: calc(800px - (30px * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px; }
-  @media screen and (max-width: 800px) {
-    .wrapper {
-      max-width: calc(800px - (30px));
-      padding-right: 15px;
-      padding-left: 15px; } }
-
-/**
- * Clearfix
- */
-.wrapper:after, .footer-col-wrapper:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-/**
- * Icons
- */
-.icon > svg {
-  display: inline-block;
-  vertical-align: middle; }
-  .icon > svg path {
-    fill: #828282; }
-
-/**
- * Site header
- */
-.site-header {
-  border-top: 5px solid #424242;
-  border-bottom: 1px solid #e8e8e8;
-  min-height: 56px;
-  position: relative; }
-
-.site-title {
-  font-size: 26px;
-  font-weight: 300;
-  line-height: 56px;
-  letter-spacing: -1px;
-  margin-bottom: 0;
-  float: left; }
-  .site-title, .site-title:visited {
-    color: #424242; }
-
-.site-nav {
-  float: right;
-  line-height: 56px; }
-  .site-nav .menu-icon {
-    display: none; }
-  .site-nav .page-link {
-    color: #111;
-    line-height: 1.5; }
-    .site-nav .page-link:not(:last-child) {
-      margin-right: 20px; }
-  @media screen and (max-width: 600px) {
-    .site-nav {
-      position: absolute;
-      top: 9px;
-      right: 15px;
-      background-color: #fdfdfd;
-      border: 1px solid #e8e8e8;
-      border-radius: 5px;
-      text-align: right; }
-      .site-nav .menu-icon {
-        display: block;
-        float: right;
-        width: 36px;
-        height: 26px;
-        line-height: 0;
-        padding-top: 10px;
-        text-align: center; }
-        .site-nav .menu-icon > svg path {
-          fill: #424242; }
-      .site-nav .trigger {
-        clear: both;
-        display: none; }
-      .site-nav:hover .trigger {
-        display: block;
-        padding-bottom: 5px; }
-      .site-nav .page-link {
-        display: block;
-        padding: 5px 10px;
-        margin-left: 20px; }
-        .site-nav .page-link:not(:last-child) {
-          margin-right: 0; } }
-
-/**
- * Site footer
- */
-.site-footer {
-  border-top: 1px solid #e8e8e8;
-  padding: 30px 0; }
-
-.footer-heading {
-  font-size: 18px;
-  margin-bottom: 15px; }
-
-.contact-list,
-.social-media-list {
-  list-style: none;
-  margin-left: 0; }
-
-.footer-col-wrapper {
-  font-size: 15px;
-  color: #828282;
-  margin-left: -15px; }
-
-.footer-col {
-  float: left;
-  margin-bottom: 15px;
-  padding-left: 15px; }
-
-.footer-col-1 {
-  width: calc(35% - (30px / 2)); }
-
-.footer-col-2 {
-  width: calc(20% - (30px / 2)); }
-
-.footer-col-3 {
-  width: calc(45% - (30px / 2)); }
-
-@media screen and (max-width: 800px) {
-  .footer-col-1,
-  .footer-col-2 {
-    width: calc(50% - (30px / 2)); }
-  .footer-col-3 {
-    width: calc(100% - (30px / 2)); } }
-
-@media screen and (max-width: 600px) {
-  .footer-col {
-    float: none;
-    width: calc(100% - (30px / 2)); } }
-
-/**
- * Page content
- */
-.page-content {
-  padding: 30px 0; }
-
-.page-heading {
-  font-size: 20px; }
-
-.post-list {
-  margin-left: 0;
-  list-style: none; }
-  .post-list > li {
-    margin-bottom: 30px; }
-
-.post-meta {
-  font-size: 14px;
-  color: #828282; }
-
-.post-link {
-  display: block;
-  font-size: 24px; }
-
-/**
- * Posts
- */
-.post-header {
-  margin-bottom: 30px; }
-
-.post-title {
-  font-size: 42px;
-  letter-spacing: -1px;
-  line-height: 1; }
-  @media screen and (max-width: 800px) {
-    .post-title {
-      font-size: 36px; } }
-
-.post-content {
-  margin-bottom: 30px; }
-  .post-content h2 {
-    font-size: 32px; }
-    @media screen and (max-width: 800px) {
-      .post-content h2 {
-        font-size: 28px; } }
-  .post-content h3 {
-    font-size: 26px; }
-    @media screen and (max-width: 800px) {
-      .post-content h3 {
-        font-size: 22px; } }
-  .post-content h4 {
-    font-size: 20px; }
-    @media screen and (max-width: 800px) {
-      .post-content h4 {
-        font-size: 18px; } }
-
-/**
- * Syntax highlighting styles
- */
-.highlight {
-  background: #fff; }
-  .highlighter-rouge .highlight {
-    background: #eef; }
-  .highlight .c {
-    color: #998;
-    font-style: italic; }
-  .highlight .err {
-    color: #a61717;
-    background-color: #e3d2d2; }
-  .highlight .k {
-    font-weight: bold; }
-  .highlight .o {
-    font-weight: bold; }
-  .highlight .cm {
-    color: #998;
-    font-style: italic; }
-  .highlight .cp {
-    color: #999;
-    font-weight: bold; }
-  .highlight .c1 {
-    color: #998;
-    font-style: italic; }
-  .highlight .cs {
-    color: #999;
-    font-weight: bold;
-    font-style: italic; }
-  .highlight .gd {
-    color: #000;
-    background-color: #fdd; }
-  .highlight .gd .x {
-    color: #000;
-    background-color: #faa; }
-  .highlight .ge {
-    font-style: italic; }
-  .highlight .gr {
-    color: #a00; }
-  .highlight .gh {
-    color: #999; }
-  .highlight .gi {
-    color: #000;
-    background-color: #dfd; }
-  .highlight .gi .x {
-    color: #000;
-    background-color: #afa; }
-  .highlight .go {
-    color: #888; }
-  .highlight .gp {
-    color: #555; }
-  .highlight .gs {
-    font-weight: bold; }
-  .highlight .gu {
-    color: #aaa; }
-  .highlight .gt {
-    color: #a00; }
-  .highlight .kc {
-    font-weight: bold; }
-  .highlight .kd {
-    font-weight: bold; }
-  .highlight .kp {
-    font-weight: bold; }
-  .highlight .kr {
-    font-weight: bold; }
-  .highlight .kt {
-    color: #458;
-    font-weight: bold; }
-  .highlight .m {
-    color: #099; }
-  .highlight .s {
-    color: #d14; }
-  .highlight .na {
-    color: #008080; }
-  .highlight .nb {
-    color: #0086B3; }
-  .highlight .nc {
-    color: #458;
-    font-weight: bold; }
-  .highlight .no {
-    color: #008080; }
-  .highlight .ni {
-    color: #800080; }
-  .highlight .ne {
-    color: #900;
-    font-weight: bold; }
-  .highlight .nf {
-    color: #900;
-    font-weight: bold; }
-  .highlight .nn {
-    color: #555; }
-  .highlight .nt {
-    color: #000080; }
-  .highlight .nv {
-    color: #008080; }
-  .highlight .ow {
-    font-weight: bold; }
-  .highlight .w {
-    color: #bbb; }
-  .highlight .mf {
-    color: #099; }
-  .highlight .mh {
-    color: #099; }
-  .highlight .mi {
-    color: #099; }
-  .highlight .mo {
-    color: #099; }
-  .highlight .sb {
-    color: #d14; }
-  .highlight .sc {
-    color: #d14; }
-  .highlight .sd {
-    color: #d14; }
-  .highlight .s2 {
-    color: #d14; }
-  .highlight .se {
-    color: #d14; }
-  .highlight .sh {
-    color: #d14; }
-  .highlight .si {
-    color: #d14; }
-  .highlight .sx {
-    color: #d14; }
-  .highlight .sr {
-    color: #009926; }
-  .highlight .s1 {
-    color: #d14; }
-  .highlight .ss {
-    color: #990073; }
-  .highlight .bp {
-    color: #999; }
-  .highlight .vc {
-    color: #008080; }
-  .highlight .vg {
-    color: #008080; }
-  .highlight .vi {
-    color: #008080; }
-  .highlight .il {
-    color: #099; }
-
-/**
  * ConciseCSS v4.1.2
  * https://github.com/ConciseCSS/concise.css
  *
@@ -498,7 +52,7 @@ template,
   line-height: 1.5;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  background-color: white;
+  background-color: #e5e5e5;
   color: #444;
   font-size: 16px;
   text-rendering: optimizeLegibility; }
@@ -655,17 +209,17 @@ textarea {
   input:focus,
   select:focus,
   textarea:focus {
-    outline: 2px solid #2b90d9; }
+    outline: 2px solid #263a84; }
 
-button, input[type="submit"],
+button, input[type="submit"], .button,
 input {
   overflow: visible; }
 
-button, input[type="submit"],
+button, input[type="submit"], .button,
 select {
   text-transform: none; }
 
-button, input[type="submit"],
+button, input[type="submit"], .button,
 html [type="button"],
 [type="reset"],
 [type="submit"] {
@@ -764,7 +318,7 @@ input[type="range"] {
   input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none; }
 
-button, input[type="submit"] {
+button, input[type="submit"], .button {
   background-color: #C65146;
   border: none;
   color: white;
@@ -775,13 +329,13 @@ button, input[type="submit"] {
   -webkit-transition: background-color 150ms;
   transition: background-color 150ms;
   white-space: nowrap; }
-  button:hover, input[type="submit"]:hover, button:focus, input[type="submit"]:focus {
+  button:hover, input[type="submit"]:hover, .button:hover, .podcast-card a:hover .button, .podcast-card a:focus .button, button:focus, input[type="submit"]:focus, .button:focus {
     background-color: #cc6359;
     text-decoration: none;
     outline: none; }
-  button:active, input[type="submit"]:active {
+  button:active, input[type="submit"]:active, .button:active {
     background-color: #d2766d; }
-  button[disabled], input[disabled][type="submit"] {
+  button[disabled], input[disabled][type="submit"], [disabled].button {
     background-color: #eee;
     color: white;
     cursor: not-allowed; }
@@ -799,6 +353,7 @@ a,
 area,
 button,
 input[type="submit"],
+.button,
 input,
 label,
 select,
@@ -1431,7 +986,7 @@ table {
     margin-bottom: 0.375rem; }
 
 .dropdown-content {
-  background-color: white;
+  background-color: #e5e5e5;
   border: 1px solid #DCDCDC;
   color: #444;
   left: 0;
@@ -1547,101 +1102,101 @@ table {
     background-color: rgba(218, 60, 60, 0.15);
     color: #bf2424; }
 
-button, input[type="submit"] {
+button, input[type="submit"], .button {
   overflow: hidden; }
-  button.-bordered, input.-bordered[type="submit"] {
+  button.-bordered, input.-bordered[type="submit"], .-bordered.button {
     background-color: transparent;
     border: 1px solid #C65146;
     color: #C65146; }
-    button.-bordered:hover, input.-bordered[type="submit"]:hover, button.-bordered:focus, input.-bordered[type="submit"]:focus {
+    button.-bordered:hover, input.-bordered[type="submit"]:hover, .-bordered.button:hover, .podcast-card a:hover .-bordered.button, .podcast-card a:focus .-bordered.button, button.-bordered:focus, input.-bordered[type="submit"]:focus, .-bordered.button:focus {
       background-color: #C65146;
       color: white; }
-    button.-bordered[disabled], input.-bordered[disabled][type="submit"] {
+    button.-bordered[disabled], input.-bordered[disabled][type="submit"], .-bordered[disabled].button {
       border-color: #eee;
       color: #eee; }
-      button.-bordered[disabled]:hover, input.-bordered[disabled][type="submit"]:hover, button.-bordered[disabled]:focus, input.-bordered[disabled][type="submit"]:focus, button.-bordered[disabled]:active, input.-bordered[disabled][type="submit"]:active {
+      button.-bordered[disabled]:hover, input.-bordered[disabled][type="submit"]:hover, .-bordered[disabled].button:hover, .podcast-card a:hover .-bordered[disabled].button, .podcast-card a:focus .-bordered[disabled].button, button.-bordered[disabled]:focus, input.-bordered[disabled][type="submit"]:focus, .-bordered[disabled].button:focus, button.-bordered[disabled]:active, input.-bordered[disabled][type="submit"]:active, .-bordered[disabled].button:active {
         background-color: transparent;
         border-color: #eee;
         color: #eee; }
-    button.-bordered.-muted, input.-bordered.-muted[type="submit"] {
+    button.-bordered.-muted, input.-bordered.-muted[type="submit"], .-bordered.-muted.button {
       border-color: #eee;
       background-color: transparent;
       color: #eee; }
-      button.-bordered.-muted:hover, input.-bordered.-muted[type="submit"]:hover, button.-bordered.-muted:focus, input.-bordered.-muted[type="submit"]:focus {
+      button.-bordered.-muted:hover, input.-bordered.-muted[type="submit"]:hover, .-bordered.-muted.button:hover, .podcast-card a:hover .-bordered.-muted.button, .podcast-card a:focus .-bordered.-muted.button, button.-bordered.-muted:focus, input.-bordered.-muted[type="submit"]:focus, .-bordered.-muted.button:focus {
         background-color: #eee; }
-      button.-bordered.-muted:active, input.-bordered.-muted[type="submit"]:active {
+      button.-bordered.-muted:active, input.-bordered.-muted[type="submit"]:active, .-bordered.-muted.button:active {
         background-color: #fbfbfb; }
-      button.-bordered.-muted:hover, input.-bordered.-muted[type="submit"]:hover, button.-bordered.-muted:focus, input.-bordered.-muted[type="submit"]:focus, button.-bordered.-muted:active, input.-bordered.-muted[type="submit"]:active {
+      button.-bordered.-muted:hover, input.-bordered.-muted[type="submit"]:hover, .-bordered.-muted.button:hover, .podcast-card a:hover .-bordered.-muted.button, .podcast-card a:focus .-bordered.-muted.button, button.-bordered.-muted:focus, input.-bordered.-muted[type="submit"]:focus, .-bordered.-muted.button:focus, button.-bordered.-muted:active, input.-bordered.-muted[type="submit"]:active, .-bordered.-muted.button:active {
         color: white; }
-    button.-bordered.-success, input.-bordered.-success[type="submit"] {
+    button.-bordered.-success, input.-bordered.-success[type="submit"], .-bordered.-success.button {
       border-color: #10a887;
       background-color: transparent;
       color: #10a887; }
-      button.-bordered.-success:hover, input.-bordered.-success[type="submit"]:hover, button.-bordered.-success:focus, input.-bordered.-success[type="submit"]:focus {
+      button.-bordered.-success:hover, input.-bordered.-success[type="submit"]:hover, .-bordered.-success.button:hover, .podcast-card a:hover .-bordered.-success.button, .podcast-card a:focus .-bordered.-success.button, button.-bordered.-success:focus, input.-bordered.-success[type="submit"]:focus, .-bordered.-success.button:focus {
         background-color: #10a887; }
-      button.-bordered.-success:active, input.-bordered.-success[type="submit"]:active {
+      button.-bordered.-success:active, input.-bordered.-success[type="submit"]:active, .-bordered.-success.button:active {
         background-color: #12bf9a; }
-      button.-bordered.-success:hover, input.-bordered.-success[type="submit"]:hover, button.-bordered.-success:focus, input.-bordered.-success[type="submit"]:focus, button.-bordered.-success:active, input.-bordered.-success[type="submit"]:active {
+      button.-bordered.-success:hover, input.-bordered.-success[type="submit"]:hover, .-bordered.-success.button:hover, .podcast-card a:hover .-bordered.-success.button, .podcast-card a:focus .-bordered.-success.button, button.-bordered.-success:focus, input.-bordered.-success[type="submit"]:focus, .-bordered.-success.button:focus, button.-bordered.-success:active, input.-bordered.-success[type="submit"]:active, .-bordered.-success.button:active {
         color: white; }
-    button.-bordered.-warning, input.-bordered.-warning[type="submit"] {
+    button.-bordered.-warning, input.-bordered.-warning[type="submit"], .-bordered.-warning.button {
       border-color: #F17F42;
       background-color: transparent;
       color: #F17F42; }
-      button.-bordered.-warning:hover, input.-bordered.-warning[type="submit"]:hover, button.-bordered.-warning:focus, input.-bordered.-warning[type="submit"]:focus {
+      button.-bordered.-warning:hover, input.-bordered.-warning[type="submit"]:hover, .-bordered.-warning.button:hover, .podcast-card a:hover .-bordered.-warning.button, .podcast-card a:focus .-bordered.-warning.button, button.-bordered.-warning:focus, input.-bordered.-warning[type="submit"]:focus, .-bordered.-warning.button:focus {
         background-color: #F17F42; }
-      button.-bordered.-warning:active, input.-bordered.-warning[type="submit"]:active {
+      button.-bordered.-warning:active, input.-bordered.-warning[type="submit"]:active, .-bordered.-warning.button:active {
         background-color: #f38f5a; }
-      button.-bordered.-warning:hover, input.-bordered.-warning[type="submit"]:hover, button.-bordered.-warning:focus, input.-bordered.-warning[type="submit"]:focus, button.-bordered.-warning:active, input.-bordered.-warning[type="submit"]:active {
+      button.-bordered.-warning:hover, input.-bordered.-warning[type="submit"]:hover, .-bordered.-warning.button:hover, .podcast-card a:hover .-bordered.-warning.button, .podcast-card a:focus .-bordered.-warning.button, button.-bordered.-warning:focus, input.-bordered.-warning[type="submit"]:focus, .-bordered.-warning.button:focus, button.-bordered.-warning:active, input.-bordered.-warning[type="submit"]:active, .-bordered.-warning.button:active {
         color: white; }
-    button.-bordered.-error, input.-bordered.-error[type="submit"] {
+    button.-bordered.-error, input.-bordered.-error[type="submit"], .-bordered.-error.button {
       border-color: #da3c3c;
       background-color: transparent;
       color: #da3c3c; }
-      button.-bordered.-error:hover, input.-bordered.-error[type="submit"]:hover, button.-bordered.-error:focus, input.-bordered.-error[type="submit"]:focus {
+      button.-bordered.-error:hover, input.-bordered.-error[type="submit"]:hover, .-bordered.-error.button:hover, .podcast-card a:hover .-bordered.-error.button, .podcast-card a:focus .-bordered.-error.button, button.-bordered.-error:focus, input.-bordered.-error[type="submit"]:focus, .-bordered.-error.button:focus {
         background-color: #da3c3c; }
-      button.-bordered.-error:active, input.-bordered.-error[type="submit"]:active {
+      button.-bordered.-error:active, input.-bordered.-error[type="submit"]:active, .-bordered.-error.button:active {
         background-color: #de5151; }
-      button.-bordered.-error:hover, input.-bordered.-error[type="submit"]:hover, button.-bordered.-error:focus, input.-bordered.-error[type="submit"]:focus, button.-bordered.-error:active, input.-bordered.-error[type="submit"]:active {
+      button.-bordered.-error:hover, input.-bordered.-error[type="submit"]:hover, .-bordered.-error.button:hover, .podcast-card a:hover .-bordered.-error.button, .podcast-card a:focus .-bordered.-error.button, button.-bordered.-error:focus, input.-bordered.-error[type="submit"]:focus, .-bordered.-error.button:focus, button.-bordered.-error:active, input.-bordered.-error[type="submit"]:active, .-bordered.-error.button:active {
         color: white; }
-  button.-muted, input.-muted[type="submit"] {
+  button.-muted, input.-muted[type="submit"], .-muted.button {
     background-color: #eee;
     color: white; }
-    button.-muted:hover, input.-muted[type="submit"]:hover, button.-muted:focus, input.-muted[type="submit"]:focus {
+    button.-muted:hover, input.-muted[type="submit"]:hover, .-muted.button:hover, .podcast-card a:hover .-muted.button, .podcast-card a:focus .-muted.button, button.-muted:focus, input.-muted[type="submit"]:focus, .-muted.button:focus {
       background-color: #fbfbfb; }
-    button.-muted:active, input.-muted[type="submit"]:active {
+    button.-muted:active, input.-muted[type="submit"]:active, .-muted.button:active {
       background-color: white; }
-  button.-success, input.-success[type="submit"] {
+  button.-success, input.-success[type="submit"], .-success.button {
     background-color: #10a887;
     color: white; }
-    button.-success:hover, input.-success[type="submit"]:hover, button.-success:focus, input.-success[type="submit"]:focus {
+    button.-success:hover, input.-success[type="submit"]:hover, .-success.button:hover, .podcast-card a:hover .-success.button, .podcast-card a:focus .-success.button, button.-success:focus, input.-success[type="submit"]:focus, .-success.button:focus {
       background-color: #12bf9a; }
-    button.-success:active, input.-success[type="submit"]:active {
+    button.-success:active, input.-success[type="submit"]:active, .-success.button:active {
       background-color: #14d7ac; }
-  button.-warning, input.-warning[type="submit"] {
+  button.-warning, input.-warning[type="submit"], .-warning.button {
     background-color: #F17F42;
     color: white; }
-    button.-warning:hover, input.-warning[type="submit"]:hover, button.-warning:focus, input.-warning[type="submit"]:focus {
+    button.-warning:hover, input.-warning[type="submit"]:hover, .-warning.button:hover, .podcast-card a:hover .-warning.button, .podcast-card a:focus .-warning.button, button.-warning:focus, input.-warning[type="submit"]:focus, .-warning.button:focus {
       background-color: #f38f5a; }
-    button.-warning:active, input.-warning[type="submit"]:active {
+    button.-warning:active, input.-warning[type="submit"]:active, .-warning.button:active {
       background-color: #f59f71; }
-  button.-error, input.-error[type="submit"] {
+  button.-error, input.-error[type="submit"], .-error.button {
     background-color: #da3c3c;
     color: white; }
-    button.-error:hover, input.-error[type="submit"]:hover, button.-error:focus, input.-error[type="submit"]:focus {
+    button.-error:hover, input.-error[type="submit"]:hover, .-error.button:hover, .podcast-card a:hover .-error.button, .podcast-card a:focus .-error.button, button.-error:focus, input.-error[type="submit"]:focus, .-error.button:focus {
       background-color: #de5151; }
-    button.-error:active, input.-error[type="submit"]:active {
+    button.-error:active, input.-error[type="submit"]:active, .-error.button:active {
       background-color: #e26767; }
-  button.-prefix, input.-prefix[type="submit"] {
+  button.-prefix, input.-prefix[type="submit"], .-prefix.button {
     padding-left: 0; }
-    button.-prefix .prefix, input.-prefix[type="submit"] .prefix {
+    button.-prefix .prefix, input.-prefix[type="submit"] .prefix, .-prefix.button .prefix {
       background-color: rgba(0, 0, 0, 0.15);
       display: inline-block;
       margin-right: 1.25em;
       padding: 0 1em;
       vertical-align: 0; }
-  button.-affix, input.-affix[type="submit"] {
+  button.-affix, input.-affix[type="submit"], .-affix.button {
     padding-right: 0; }
-    button.-affix > .affix, input.-affix[type="submit"] > .affix {
+    button.-affix > .affix, input.-affix[type="submit"] > .affix, .-affix.button > .affix {
       background-color: rgba(0, 0, 0, 0.15);
       display: inline-block;
       margin-left: 1.25em;
@@ -1989,10 +1544,10 @@ button, input[type="submit"] {
   background-color: #f5f5f5; }
 
 ._c-background-body {
-  color: white; }
+  color: #e5e5e5; }
 
 ._bg-background-body {
-  background-color: white; }
+  background-color: #e5e5e5; }
 
 ._c-state-muted {
   color: #eee; }
@@ -2025,16 +1580,16 @@ button, input[type="submit"] {
   background-color: #1573b6; }
 
 ._c-blue-dark {
-  color: #1e80c6; }
+  color: #1c2b61; }
 
 ._bg-blue-dark {
-  background-color: #1e80c6; }
+  background-color: #1c2b61; }
 
 ._c-blue-base {
-  color: #2b90d9; }
+  color: #263a84; }
 
 ._bg-blue-base {
-  background-color: #2b90d9; }
+  background-color: #263a84; }
 
 ._c-blue-light {
   color: #3fa2e9; }
@@ -2091,10 +1646,10 @@ button, input[type="submit"] {
   background-color: #b73333; }
 
 ._c-red-base {
-  color: #da3c3c; }
+  color: #d82427; }
 
 ._bg-red-base {
-  background-color: #da3c3c; }
+  background-color: #d82427; }
 
 ._c-red-light {
   color: #f25a5a; }
@@ -2127,10 +1682,10 @@ button, input[type="submit"] {
   background-color: #666666; }
 
 ._c-gray-light {
-  color: #808080; }
+  color: #e5e5e5; }
 
 ._bg-gray-light {
-  background-color: #808080; }
+  background-color: #e5e5e5; }
 
 ._c-gray-lighter {
   color: #999999; }
@@ -2407,3 +1962,86 @@ button, input[type="submit"] {
 ._masonry > * {
   display: inline-block;
   width: 100%; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+/**
+ * Site header
+ */
+.site-header {
+  background: #fff;
+  border-top: 5px solid #1c2b61;
+  border-bottom: 1px solid #1c2b61;
+  min-height: 150px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 0;
+  position: relative; }
+
+.site-nav {
+  float: right;
+  line-height: 107px; }
+  .site-nav .menu-icon {
+    display: none; }
+  .site-nav .page-link {
+    color: #263a84; }
+    .site-nav .page-link:not(:last-child) {
+      margin-right: 20px; }
+
+.button {
+  -webkit-appearance: initial;
+     -moz-appearance: initial;
+          appearance: initial;
+  padding: 0.75em 1.5em; }
+
+.podcast-card {
+  background: #fff;
+  border-radius: 7px;
+  overflow: hidden;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
+  .podcast-card:hover {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98); }
+  .podcast-card a {
+    color: #444; }
+    .podcast-card a:hover, .podcast-card a:focus {
+      text-decoration: none; }
+  .podcast-card .date {
+    color: #777;
+    font-size: 0.83333rem;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .podcast-card .content {
+    padding: 2rem; }
+    .podcast-card .content h2 {
+      margin-top: .25rem; }
+  .podcast-card p {
+    margin-bottom: 1rem; }
+
+.post-header {
+  margin-bottom: 1.5rem; }
+  .post-header .content {
+    padding: .75rem 0; }
+  .post-header h1 {
+    font-size: 1.728rem; }
+  .post-header .date {
+    color: #777;
+    font-size: 0.83333rem;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .post-header iframe {
+    margin-top: 0; }
+
+.post-content {
+  background: #fff;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.alignright {
+  float: right; }
+
+.alignleft {
+  float: left; }
